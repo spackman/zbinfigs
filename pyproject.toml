@@ -1,6 +1,7 @@
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
 [project]
 name = "zbinfigs"
 version = "0.0.0"
@@ -21,6 +22,17 @@ test = [
     "pytest",
     "coverage"
 ]
+docs = [
+  "furo",
+  "myst_parser >=0.13",
+  "sphinx >=4.0",
+  "sphinx-copybutton",
+  "sphinx-autodoc-typehints",
+]
+
+[project.urls]
+"Source Code" = "https://github.com/spackman/zbinfigs"
+
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
