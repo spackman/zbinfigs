@@ -131,4 +131,6 @@ This shows an example of using several different image classification strategies
   - More documentation on annotation examples
   - Tutorial script  
   - Prepare for RSE presentation?  
+  - Parallelization of pdf processing with mpi4py (platform agnostic)
+  - Robust try/except error handling with logging information
   
