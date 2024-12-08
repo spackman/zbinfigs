@@ -16,3 +16,22 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "coverage"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+# Ruff Linter
+[tool.ruff]
+src = ["src"]
+extend-include = ["*.ipynb"]
+
+# Use Numpy-style docstrings.
+[tool.ruff.lint]
+select = ["D"]
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
