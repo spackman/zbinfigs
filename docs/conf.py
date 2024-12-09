@@ -2,11 +2,16 @@ from __future__ import annotations
 
 import importlib.metadata
 from typing import Any
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('../src/zbinfigs/'))
+
 
 project = "zbinfigs"
 copyright = "2024, Isaac Spackman"
 author = "Isaac Spackman"
-version = release = importlib.metadata.version("package")
+version = release = importlib.metadata.version("zbinfigs")
 
 extensions = [
     "myst_parser",
