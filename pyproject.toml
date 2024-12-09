@@ -23,7 +23,7 @@ test = [
     "coverage"
 ]
 docs = [
-  "furo",
+  "sphinx_rtd_theme",
   "myst_parser >=0.13",
   "sphinx >=4.0",
   "sphinx-copybutton",
