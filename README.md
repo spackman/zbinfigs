@@ -1,5 +1,6 @@
 # Zbinfigs
-
+Version : 0.1.1  
+  
 ## Overview
 zbinfigs is a python code designed to facilitate classification of scholarly articles stored in zotero collections. 
 The code input is a .csv exported from a zotero collection. The code allows for several options:  
@@ -9,7 +10,7 @@ The code input is a .csv exported from a zotero collection. The code allows for 
   4. Train and test classifier
 
 ### Organize and Compile
-A raw zotero collection may not have .pdf files for all records, and for those that have .pdf files not all may be acessible. 
+A raw zotero collection may not have .pdf files for all records, and for those that have .pdf files not all may be accessible. 
 In the organize and compile option, the program reads a default .csv describing a zotero collection and checks all of the file links.
 Where no files are available, this flag is written to a summary document. If only .html files are available, the program strips the CSS 
 from the file and converts it to a .pdf file. At the end of the program execution, all available .pdf files are written to a common folder. 
