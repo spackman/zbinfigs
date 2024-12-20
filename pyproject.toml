@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "zbinfigs"
-version = "0.10.2"
+version = "0.1.0"
 authors = [
   { name="Isaac Spackman", email="ispackman@mines.edu" },
 ]
@@ -12,12 +12,12 @@ description = "A package for figure classification from a zotero collection of s
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-  "pandas",
-  "matplotlib",
-  "bs4",
-  "xhtml2pdf",
-  "marker-pdf",
-  "tqdm"
+  "pandas>=2.2.3",
+  "matplotlib>=3.7.1",
+  "bs4>=4.2.4",
+  "xhtml2pdf>=0.2.16",
+  "marker-pdf>=1.1.0",
+  "tqdm>=4.67"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -54,3 +54,15 @@ extend-include = ["*.ipynb"]
 select = ["D"]
 [tool.ruff.lint.pydocstyle]
 convention = "numpy"
+
+[tool.bumpver]
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message  = "Bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/zbinfigs/__init__.py" = ['^__version__ = "{version}"$']
