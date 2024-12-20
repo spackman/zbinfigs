@@ -1,3 +1,0 @@
-matplotlib
-xhtml2pdf
-pandas

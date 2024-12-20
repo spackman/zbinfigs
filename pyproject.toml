@@ -4,13 +4,21 @@ build-backend = "hatchling.build"
 
 [project]
 name = "zbinfigs"
-version = "0.0.0"
+version = "0.10.2"
 authors = [
   { name="Isaac Spackman", email="ispackman@mines.edu" },
 ]
 description = "A package for figure classification from a zotero collection of scholarly articles"
 readme = "README.md"
 requires-python = ">=3.10"
+dependencies = [
+  "pandas",
+  "matplotlib",
+  "bs4",
+  "xhtml2pdf",
+  "marker-pdf",
+  "tqdm"
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -25,17 +33,13 @@ test = [
 docs = [
   "sphinx_rtd_theme",
   "myst_parser >=0.13",
-  "sphinx >=4.0",
+  "sphinx >=4.0", 
   "sphinx-copybutton",
   "sphinx-autodoc-typehints",
 ]
 
 [project.urls]
 "Source Code" = "https://github.com/spackman/zbinfigs"
-
-
-[tool.hatch.build.targets.wheel]
-packages = ["src"]
 
 # Ruff Linter
 [tool.ruff]

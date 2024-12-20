@@ -15,8 +15,7 @@ import shutil
 import os
 import pandas as pd
 import logging
-import collection
-import logging
+from .collection import *
 from typing import Tuple, List
 from marker.converters.pdf import PdfConverter
 from marker.models import create_model_dict
