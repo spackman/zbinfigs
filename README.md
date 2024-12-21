@@ -1,5 +1,5 @@
 # Zbinfigs
-Version : 0.1.6  
+Version : 0.1.7  
   
 ## Overview
 zbinfigs is a python code designed to facilitate classification of scholarly articles stored in zotero collections. 
