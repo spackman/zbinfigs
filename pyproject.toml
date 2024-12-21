@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "zbinfigs"
-version = "0.1.2"
+version = "0.1.3"
 authors = [
   { name="Isaac Spackman", email="ispackman@mines.edu" },
 ]
@@ -56,7 +56,7 @@ select = ["D"]
 convention = "numpy"
 
 [tool.bumpver]
-current_version = "0.1.2"
+current_version = "0.1.3"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message  = "Bump version {old_version} -> {new_version}"
 commit          = true
@@ -65,5 +65,5 @@ push            = false
 
 [tool.bumpver.file_patterns]
 "pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
-"src/zbinfigs/__init__.py" = ['^__version__ = "{version}"$']
-"README.md" = ['Version : "{version}"  ']
+"src/zbinfigs/__init__.py" = ['__version__ = "{version}"']
+"README.md" = ['Version : "{version}"']
