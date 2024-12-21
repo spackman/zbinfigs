@@ -37,7 +37,7 @@ __description__ = """
 zbinfigs is a python code designed to facilitate classification of scholarly articles stored in zotero collections. 
 The code input is a .csv exported from a zotero collection.
 """
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 __license__ = "MIT"  
 __status__ = "Development"  
 __maintainer__ = "Isaac Spackman"
