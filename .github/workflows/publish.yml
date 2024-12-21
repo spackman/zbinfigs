@@ -2,7 +2,8 @@ on:
   workflow_dispatch:
   release:
     types:
-    - published
+      - published
+
 jobs:
   dist:
     runs-on: ubuntu-latest
@@ -16,19 +17,20 @@ jobs:
 
     - uses: actions/upload-artifact@v4
       with:
+        name: dist-artifact  # Explicitly naming the artifact here
         path: dist/*
-        
-publish:
-  needs: [dist]
-  runs-on: ubuntu-latest
-  if: github.event_name == 'release' && github.event.action == 'published'
 
-  steps:
-  - uses: actions/download-artifact@v4
-    with:
-      name: artifact
-      path: dist
+  publish:
+    needs: [dist]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release' && github.event.action == 'published'
 
-  - uses: pypa/gh-action-pypi-publish@release/v1
-    with:
-      repository-url: https://upload.pypi.org/legacy/
+    steps:
+    - uses: actions/download-artifact@v4
+      with:
+        name: dist-artifact  # Matching the name of the uploaded artifact
+        path: dist
+
+    - uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repository-url: https://upload.pypi.org/legacy/
