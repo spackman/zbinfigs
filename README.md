@@ -1,6 +1,13 @@
 # Zbinfigs
-Version : 0.1.7  
-  
+![GitHub top language](https://img.shields.io/github/languages/top/spackman/zbinfigs) 
+![GitHub License](https://img.shields.io/github/license/spackman/zbinfigs) 
+![GitHub Release](https://img.shields.io/github/v/release/spackman/zbinfigs) 
+![PyPI - Downloads](https://img.shields.io/pypi/dm/zbinfigs) 
+![PyPI - Status](https://img.shields.io/pypi/status/zbinfigs) 
+![GitHub repo size](https://img.shields.io/github/repo-size/spackman/zbinfigs)  
+
+#### Version : 0.1.7  
+
 ## Overview
 zbinfigs is a python code designed to facilitate classification of scholarly articles stored in zotero collections. 
 The code input is a .csv exported from a zotero collection. The code allows for several options:  
