@@ -31,17 +31,17 @@ Use the built-in ``help`` function to view a function's docstring::
 
 
 
-__author__ = 'Isaac Spackman'
-__email__ = 'ispackman@mines.edu'
-__description__ = '''
+__author__ = "Isaac Spackman"
+__email__ = "ispackman@mines.edu"
+__description__ = """
 zbinfigs is a python code designed to facilitate classification of scholarly articles stored in zotero collections. 
 The code input is a .csv exported from a zotero collection.
-'''
-__version__ = '0.1.1'
-__license__ = 'MIT'  
-__status__ = 'Development'  
-__maintainer__ = 'Isaac Spackman'
-__maintainer_email__ = 'ispackman@mines.edu'
+"""
+__version__ = "0.1.1"
+__license__ = "MIT"  
+__status__ = "Development"  
+__maintainer__ = "Isaac Spackman"
+__maintainer_email__ = "ispackman@mines.edu"
 
 
 from .collection import *  
