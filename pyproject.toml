@@ -40,7 +40,8 @@ docs = [
   "sphinx-copybutton",
   "sphinx-autodoc-typehints",
   "nbsphinx",
-  "nox"
+  "nox",
+  "pip-tools"
 ]
 
 [project.urls]
