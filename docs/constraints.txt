@@ -1,0 +1,4 @@
+# this file is passed to pip-compile to avoid adding a windows OS specific dependency to requirements.txt
+# use the command:
+# pip-compile --constraint docs/constraints.txt docs/requirements.in
+pywin32==308; sys_platform == 'win32'

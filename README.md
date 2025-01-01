@@ -5,6 +5,10 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/zbinfigs) 
 ![PyPI - Status](https://img.shields.io/pypi/status/zbinfigs) 
 ![GitHub repo size](https://img.shields.io/github/repo-size/spackman/zbinfigs)  
+[![Code style: Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/format.json)](https://github.com/astral-sh/ruff) 
+![Read the Docs](https://img.shields.io/readthedocs/zbinfigs)
+
+
 
 #### Version : 0.1.7  
 
@@ -36,7 +40,15 @@ These annotations are then connected with the original zotero collection .csv fi
 ### Train and Test Classifier  
 From the annotated dataset, several classifiers are applied and summary performance written.  
   
-  
+
+## Documentation
+
+The documentation for this project is hosted on [Read the Docs](https://zbinfigs.readthedocs.io/en/latest/). You can find the latest version of the documentation there, including installation instructions, usage guides, and other important information.
+
+For more details, visit:  
+[Zbinfigs Documentation](https://zbinfigs.readthedocs.io/en/latest/)
+
+
 # Examples  
 This is a sketch of the planned usage - this will probably change.  
   

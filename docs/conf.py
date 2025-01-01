@@ -21,9 +21,14 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx_autodoc_typehints",
     "sphinx_copybutton",
+    "nbsphinx"
 ]
 
-source_suffix = [".rst", ".md"]
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
+
 exclude_patterns = [
     "_build",
     "**.ipynb_checkpoints",
@@ -60,6 +65,16 @@ myst_enable_extensions = [
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
 }
+
+nbsphinx_execute = "auto"
+
+nbsphinx_execute_arguments = [
+    "--InlineBackend.figure_formats={'png2x'}",
+    "--InlineBackend.rc=figure.dpi=96",
+]
+
+nbsphinx_kernel_name = "python3"
+
 
 nitpick_ignore = [
     ("py:class", "_io.StringIO"),
