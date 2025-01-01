@@ -23,8 +23,8 @@ from marker.output import text_from_rendered
 from tqdm import tqdm
 
 
-def read_collection(csvfile: str) -> collection.Collection:
-    return collection.Collection(csvfile)
+def read_collection(csvfile: str) -> Collection:
+    return Collection(csvfile)
 
 def process_pdf_folder(pdfs_folder: str, file_range: Tuple[int, int]) -> None:
     """
