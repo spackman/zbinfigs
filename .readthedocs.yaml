@@ -14,8 +14,7 @@ build:
     # nodejs: "23"
     # rust: "1.82"
     # golang: "1.23"
-  install:
-    - command: pip install -e .[docs]
+
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
@@ -27,4 +26,5 @@ sphinx:
 # See https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
 python:
    install:
+   - command: pip install -e .
    - requirements: docs/requirements.txt
