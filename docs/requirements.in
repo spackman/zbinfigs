@@ -1,5 +1,5 @@
 # Pin top-level docs requirements for ReadTheDocs
 # Use pip-compile docs.in to generate the pinned version with the transitive dependencies
-sphinx == 5.0.2
-sphinx_rtd_theme==1.1.1
+sphinx==8.1.3
 sphinx-notfound-page==1.0.2
+myst-parser==4.0.0
