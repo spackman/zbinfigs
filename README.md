@@ -5,6 +5,8 @@
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/zbinfigs) 
 ![PyPI - Status](https://img.shields.io/pypi/status/zbinfigs) 
 ![GitHub repo size](https://img.shields.io/github/repo-size/spackman/zbinfigs)  
+[![Code style: Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/format.json)](https://github.com/astral-sh/ruff)
+
 
 #### Version : 0.1.7  
 

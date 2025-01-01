@@ -34,11 +34,13 @@ test = [
     "coverage"
 ]
 docs = [
-  "sphinx_rtd_theme",
+  "furo",
   "myst_parser >=0.13",
   "sphinx >=4.0", 
   "sphinx-copybutton",
   "sphinx-autodoc-typehints",
+  "nbsphinx",
+  "nox"
 ]
 
 [project.urls]
