@@ -17,7 +17,9 @@ dependencies = [
   "beautifulsoup4>=4.2.4",
   "xhtml2pdf>=0.2.16",
   "marker-pdf>=1.1.0",
-  "tqdm>=4.67"
+  "tqdm>=4.67",
+  "fpdf>=1.7.2",
+  "pillow>=10.4.0",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",

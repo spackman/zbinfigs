@@ -16,4 +16,10 @@ Next:
   Fix precommit  
   Write + get code working  
   Then revisit documentation issues  
-  
+    
+Note:  
+  Getting the .venv to work with vscode was a big challenge  
+  Steps:  
+    (1) create an ipykernel in the .venv - unclear what I did that made this work...
+    (2) update the jupyter extension settings to add the path to the new kernel  
+    Then it works (mostly)

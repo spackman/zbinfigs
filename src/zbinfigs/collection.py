@@ -35,6 +35,12 @@ class Collection:
         logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
         self.logger = logging.getLogger(__name__)
 
+    def __str__(self):
+        """
+        String representation of the Collection object, printing the first few rows of the DataFrame.
+        """
+        return str(self.df.head())
+
     def _check_record_files(self, row: pd.Series) -> Optional[str]:
         """
         Checks if any valid PDF or HTML file exists for a given record.
