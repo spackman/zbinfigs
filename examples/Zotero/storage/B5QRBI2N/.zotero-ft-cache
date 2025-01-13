@@ -1,0 +1,859 @@
+[23]
+
+REDOX POTENTIOMETRY
+
+411
+
+[23] Redox Potentiometry: Determination of Midpoint Potentials of Oxidation-Reduction Components of Biological Electron-Transfer Systems
+
+Introduction
+
+By P. LESLIE DUTTON
+
+Oxidation-reduction (abbreviated to redox) potentiometry has become a routine technique in several laboratories interested in understanding the energetics of biological electron-transfer processes and the reactions coupled to electron transfer. The information it provides is an important part of the description of biological oxidation-reduction systems. It is as equally applicable to the components involved in the ultra-rapid primary events of photosynthesis as it is to respiratory systems and many of the enzymes involved in metabolism and drug detoxification. The basic practical approach is the same for all the different systems. With the appropriate simple equipment and when certain guidelines are followed the measurements can be as straightforward as pH determination.
+
+Simple Theory and the Nature of the Information Obtained from Oxidation-Reduction Potentiometry
+
+A redox component or "couple," A re,t/Aox, can be represented as undergoing the following reaction:
+
+A redu(:~.d = A oxidized "[- h e -
+
+(1)
+
+where n is the number of electrons (e-) which leave the reduced component as it goes oxidized and are incorporated as it goes reduced. The n value is usually one or two, but it can be more. Such an equation represents only half the complete oxidation-reduction reaction; it is called a half cell. Another half cell is required to complete the reaction because electrons are not free entities identifiable in the chemical sense. The complete cell is:
+
+Ared -}- Box = Aox + Br~(1
+
+(2)
+
+In this case as written, B obviously has an n value that is the same as that of A. IfB and A had different numbers of electrons to exchange per mole (i.e., different n values) then the ratios of A and B would be adjusted appropriately to account for the number of electrons exchanged. The equilibrium constant (Keq = [Ao×][Bre~l]/[Ar~d][Box]) of Eq. (2) will depend on the individual affinities for electrons of the A and B couples. Thus if B has a higher affinity for electrons than A under standard conditions (unit activities) the reaction will tend to the right, and it would be understood thatB is a stronger oxidizing agent or a weaker reducing agent than A. Since in this
+
+• METHODS IN ENZYMOLOGY, VOL. LIV
+
+Copyright ~ 1978 by Academic Press, Inc. All rights of reproduction in any form reserved.
+ISBN 0-12-181954-X
+
+412
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+case the standard free energy of the reaction (i.e., AG°, the free energy of the reaction maintained under standard, unit-activity conditions) will from the usual expression and sign convention, AG° = --RT In Keq, be negative, Keq will be expected to be > I. The general expression to account for nonstandard conditions is:
+
+AG = AG ° + R T In [Aox] [Bred]
+
+[Ared] [Box]
+
+(3)
+
+Common to all redox reactions between two half cells is electron
+
+transfer. Because of this we can avoid having to list equilibrium constants
+
+or AG° of the reactions between innumerable redox couples, and instead we
+
+can refer the electron affinities of individual redox half cells to one half cell
+
+which is chosen as a standard. This is usually the standard hydrogen half
+
+cell which is usually written as ½H2 = H + + e-. This half cell is made up
+
+of hydrogen gas at I atm in equilibrium with a solution ofH + of unit activity
+
+(i.e., pH = 0). Because of the nature of the measurement and the reactions,
+
+it is appropriate to use electrical potential units throughout. This is
+
+achieved by using the equation AG = --nF AE where AE is the redox
+
+potential difference between two half cells andF is the Faraday which is the chemical to electrical potential " c o n v e r s i o n f a c t o r " (i.e., F ---- 96,493
+
+C/chemical equivalent, or, since 1J = I C/V, F = 96,493 J/V equivalent).
+
+The negative sign on the right of the equation is a matter of convention; that
+
+is, a positive redox potential change represents a low to high redox poten-
+
+tial change for which, therefore, AG is negative. Once again n is the number
+
+of electrons transferred in the reaction; an n value of 2 provides twice
+
+as much --AG per mole as an n = l reaction. Thus substituting AG =
+
+--n AE F in Eq. (3):
+
+AE = Ag o -- R____TTIn [Aox] [Bred]
+
+and rearranging
+
+n F [Ared] [Box]
+
+AE = AEo -4- R T I n [B-ox] _ R T In [Aox__.....~] n F [Bred] n F [Ared]
+or
+
+E ( B ) - E(A)= Eo,B) -- Eo(A) + R T In [Box_____]__] R___T_TIn [Aox._.....~] (4)
+nF [Bred] nF [Ared]
+
+Since there is no absolute value for redox potentials, the chosen standard hydrogen half cell E 0 is given the value of 0 V at any temperature. If we identify A as the standard hydrogen half cell, the differences of Eq. (4) disappear (i.e., [Aox] ----[Ared] and t h e r e f o r e R T / n F In [Aox/[Ared] = 0; E(A) = EOtA)which for the standard hydrogen half cell = 0 by definition), and it is accepted henceforth that the redox potential of the redox couple or half cell
+
+[2 3]
+
+REDOX POTENTIOMETRY
+
+413
+
+described here by B is referred to the hydrogen electrode. The expression becomes the well-known Nernst equation:
+
+Eh = Eo + R T In [Box____..~]
+
+(5)
+
+nF [Bred]
+
+To denote that the reference half cell is the standard hydrogen half cell the subscript h is added to the redox potential form. E0 is the standard redox potential of the B couple (i.e., for the reaction Bred = Box + ne-, Eo is that Eh at which [Box] ----[Bred] with [Box]and [Bred] maintained at unit activities at pH = 0). In general for work done at -29°C the RT/F term together with a change to loglo simplifies the expression to:
+
+Eh = E0 + 0.06 log [ox_..__~]
+
+(6)
+
+n
+
+[red]
+
+At 24°C the 2.303 R T / F becomes very nearly 0.059, at 10°C it is 0.058, and at 10°C it is approximately 0.056.
+In biology several liberties have to be taken with standard conditions. The activities of components in membranes are unknown, and even using concentrations it is not possible to approach standard conditions either in concentration, or if the H ÷ is involved, in pH. The E0, if it was measurable directly, would be a value obtained using concentrations much less than standard activities or concentrations; second, determinations at pH zero are not often very profitable with biological materials, and in most cases there is insufficient data to make an extrapolation back to pH zero from higher more physiological values. The symbol introduced by Michaelis (see Clark 1) for " s t a n d a r d " half reduction or midpoint potential point under conditions other than pH zero and under conditions less than unit activities is Em (pH = x) orEmx where m stands for midpoint andx is the ambient pH of the determination. E0, the original symbol of Clark, 1 still appears in textbooks where it signifies the midpoint at physiological pH values; however, since certain determinations may not be done exactly at pH 7.0, the other symbol, also later adopted by Clark, is better.
+Figure 1shows a typical Nernst curve forn = 1andn = 2 plotted as the state of oxidation-reduction against Eh. These are the two parameters measured in redox potentiometry as will be described later. At the half reduction point, where [ox] = [red] (i.e., [ox]/[red] = 1), theEh = Era. On the right in Fig. 1 the data are plotted as a semilog plot to yield a straight line.
+Obviously the proton in redox reactions cannot be ignored. The proton
+
+Clark, W. M. (1960). "Oxidation-Reduction Potentials of Organic Systems." Wavedy Press, Baltimore, Maryland.
+
+414
+
+O.
+
+1.0
+
+0.1. 090~
+
+SPECIALIZED TECHNIQUES
+
+-60 - 3 0 Em °50 * 6 0 mV
+
+~
+
+~
+
+~
+
+~
+
+A
+
+220-[ B
+190-I
+
+[23]
+
+V, I.O- _~0.5
+
+f30
+
+n=l
+
+]tO0 Em~.,,,.,~L
+
+4O
+
+I00 0.091
+
+m
+
+0 .........
+
+-20 I0 40 70 I00 130 160 190 220
+
+~h ~mv)
+
+0.OI
+
+010
+
+-2
+
+I0 O~X I 0 0
+
+IOC
+
+red
+
+0 IO9 o..~.x
+
+FIG. 1. The Nernst curves for one- and two-electron redox couples. Under conditions when the measured extent of reduction is 50% the redox couple is at its midpoint. In these examples, the n = 1 o r 2 redox component is given atE,. of 100 mV. The same Nernst curves are plotted in (B) on a logarithmic scale. The slope of the straight line depends on the n value and the temperature (see text); at 29.25°C, the slope of an n = 1 or 2 line is 60 mV or 30 mV, respectively, per factor of l0 change in [ox]/[red].
+
+is an integral part of the physical chemistry of many redox reactions. The underlying reason is that the oxidized form and the reduced form ofa redox couple may be chemically very different as far as proton affinity is concerned. Thus, with one or two odd exceptions, the oxidized form of a couple is a stronger acid than the conjugate reduced form. In other words, from the Henderson-Hasselbalch expression (pH ---- pK + log [base]/ [acid]) which is the proton analog of Eqs. (3) and (6), the pK (i.e., the pH when [base]= [acid]) is lower for the oxidized form than it is for the conjugate reduced form. This is intuitively easy to appreciate since the reduced form possesses n negative charges more than the oxidized form. The Nernst expression for the redox reaction in which the ambient pH is in between widely separate values for pKox and pKred can be derived as follows.
+We shall use a simple n ---- 1 redox reaction as an example:
+
+redH = ox + e- + H ÷
+
+(7)
+
+[ox] [H +] Eh = Emo + 0.06 log [red H]
+
+E h = Emo + 0.06 log
+
+[ox]
+[red H]
+
++ 0.06 log [H +]
+
+Eh = Emo + 0.06 log
+
+[ox] [red H]
+
+-- 0.06 pH
+
+(8)
+
+[23]
+
+REDOX POTENTIOMETRY
+
+415
+
+This expression tells us that the Nernst curve as a whole and hence its Em
+
+will shift - 0 . 0 6 V every pH unit increase as shown in Fig. 2. The hydrogen
+
+half cell adheres to this behavior; this is included in Fig. 2B. In the figure we
+
+have given the example of Eq. (7) a n EmT.o of 0.10 V or 100 m V , and with
+
+each unit change in pH theEmxis different by 0.06 V. In such cases in which
+
+the pH range studied encounters no pKs for ox or red, Emat a specified pH,
+
+(Emx) permits calculation of other Em values at different pH values accord-
+
+ing to
+
+Emx = Erny --
+
+0.06 (pH x - -
+
+pH y)
+
+(9a)
+
+If this condition extends to pH zero as in Fig. 2 then Em.~ values could be related to the Era0 (E0) of the half cell
+
+Emx = Emo - 0.06 pH
+
+(gb)
+
+So far we have dealt with redox reactions in which there is a net release and binding of a proton during oxidation-reduction. For most redox couples this proton exchange would be limited at lower pH values by a pK on the oxidized form (i.e., ox + H/ox) and at higher pH values by the pK on the reduced form (i.e., red H/red). In fact an increasing number of redox couples of biological interest are being revealed to have pKs in the physiological range and hence cannot be ignored. The pKs are determined by performing redox titrations to determine Em values at different pH values. Thus extending the simple redox reaction of Eq. (7), and its uninterrupted Em dependency of -0.06 V/pH unit, Fig. 3A shows experimental data which reveals pKoxand pKrea values; the pKs are shown more clearly in the E,,,/pH plot in Fig. 3B. The pKs are revealed because above and below the
+
+IO
+
+48o 4 ~ _ . . ~ )
+
+B
+
+2404
+
+e,,,( nv)l.
+
+-
+
+=
+
+• ..
+
+05
+
+240j
+
+H2/H* half c~l" -
+
+oi ,
+
+72o I
+
+5eo
+
+46o
+
+340
+
+220
+
+,oo
+
+-2o
+
+-,4o
+
+o
+
+~
+
+4
+
+~' e "
+
+Eh(mV)
+
+pX
+
+FIG. 2. T h e E , , / p H relationship of a redox couple. T h e N e r n s t curve (n = 1) of (A) of a redox couple (red H = ox + e - + H ÷) shifts upward 60 mV for every unit decrease in pH. (B) shows the E mvalues (E,,7 = 100 mV) changing as a function of pH. A hydrogen half cell is shown for comparison.
+
+416
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+1.0
+
+420, E.alO
+
+',
+
+~ . . - -4--- EmC*¢i~")
+
+B
+
+F~'oction red
+, 05-
+
+300
+
+PKox
+
+Ettt(mV) 240
+
+°x+H/°x
+
+ed H
+
+oi
+460
+
+340
+
+2ZO
+
+I00
+
+- 20
+
+120
+
+6 0 "]
+
+0 L 0
+
+2
+, ~
+
+red H / P ~ l red
+,x~
+
+4 6
+
+8
+
+IO
+
+pH
+
+FIG. 3. The Em/pH relationship when the redox couple has a pK on its oxidized form at 2 and a pK on its reduced form at 8. (A) shows what deviation one would observe experimentally as pH varied; a deviation from the 60 mV/pH unit dependence as shown in Fig. 2B, until the E,,s became totally pH-independent. (B) plots E m vs. pH as in Fig. 2B. Three regions are shown: (pH < pKox),wher~Emapproaches pH independence; (PKox< pH < pKrea),where E,, varies approximately 60 mV/pH unit; and pH > pK~ea, where Em again becomes pHindependent; the predominating redox species are indicated in each region; dashed lines extrapolate to the respective pKs.
+
+pKs the reaction in Eq. (7) becomes insignificant and there is no net proton
+e x c h a n g e and the Em value loses its d e p e n d e n c y o n the ambient pH. In this
+simple case there are three distinct regions where different redox reactions
+predominate. At pH values >>pKox and pKred the redox reaction is:
+
+red- = ox + e-
+
+(10a)
+
+At pH values between pKox and pKred the predominant reaction is as described for the reaction in Eq. (7), and at pH values ~pKred and pKox the reaction is
+
+red H = ox + H + e-
+
+(10b)
+
+The detailed description o f the E,,,/pH relationship o f Fig. 3 can be
+depicted and derived as follows:
+
+redH,
+I Kr.~
+red- + H ÷,
+
+Em~acids~
+
+,ox +H + e-
+~ K°x
+,ox e- + H +
+
+Emcbas~)
+
+We shall define Kox and Kred as dissociation constants:
+
+[23]
+
+REDOX POTENTIOMETRY
+
+417
+
+K,,x -- [ox] [H +] and Kred -- [red-] [H +]
+
+(11)
+
+[ox + H]
+
+[red H]
+
+In this system as a whole, the Emx is measured at that Eh where the total oxidized species equals the total reduced species of the redox couple:
+
+[ox] + [ox + H] Eh = Em~ + 0.06 log [red-] + [red H]
+
+(12)
+
+Substituting for [red-] and [ox] from Eqs. (10) and (I 1):
+
+[ox + H] Ko×/[H +] + [ox + H] Eh = Emx + 0.06,. log [red H] Kred/[H +] + [red H]
+
+[ox + H] (1 + Kox/[H+]) Eh = Emx + 0.06 log [red H] (i + Kr~d/[H+])
+
+Eh = Emx + 0.06 by -[ox-+ H] + 0.06 log (1 + Ko×/[H+])
+
+[red HI
+
+(1 + KroJ[H+])
+
+Since, at pH values low enough to essentially protonate both red and ox (i.e., pH ~ pKr~0 and pKox or [H +] >> Kr~d and Kox):
+
+0.06 log [[roexd+HH~] _ Eh -- Em(aeids)
+
+Therefore,
+
+(1 + Kox/[H+])
+
+(13)
+
+Emx = Era(acids)- 0.06 log (1 + Kre0/[H+])
+
+A different view of the same relationship can be derived from the Era(bases) standpoint by substitution in Eq. (12) for [red H] and [ox÷ H] of Eqs. (10) and (11). This is:
+
+(1 + [H+]/Kox)
+
+Emx = Em(b.... ) - - 0.06 log (1 + [H+]/Kred)
+
+(14)
+
+Equations (13) and (14) as written are for the proton. Substituting " L " as any ligand to the redox couple makes the equation general for the differential binding of the oxidized and the conjugate reduced form to a ligand. L can be anything from a membrane phospholipid or protein to a small chemical group. If both [H +] and [L] are interacting with the same redox couple then another term for the binding characteristics of [L] similar to that for the proton is added onto Eqs. (13) and (14). Equations for the measured Em for redox couples with multiple n values and the binding of multiple protons and ligands can also be derived using the above approach.
+
+418
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+There are numerous examples listed in the book by Clark. 1 Information from biological sources is also increasing regarding pKs and ligand binding constants (see, for example, Dutton et al.2-7).
+
+Parameters Measured in Redox Potentiometry
+The experimental goal is to measure the Eh and a corresponding state of oxidation or reduction of a redox couple: Eh is measured by electrodes, while the state of oxidation-reduction ofa redox component is measured by some physical technique, usually some form of spectrometry (spectrophotometry of all kinds such as absorbance, fluorescence, phosphorescence, Raman; and magnetic approaches such as EPR, NMR, magnetic susceptibility, etc.). The character of the biological redox component usually dictates the chosen technique; the character also will dictate whether the oxidized or reduced form is measured. Several such correlations of Eh and state of oxidation or reduction should be taken at Eh values that extend over the range that encompasses the central part of the expected Nernst curve. To make the analysis straightforward it is preferable to obtain readings for the state of oxidation-reduction as nearly fully oxidized and reduced as possible (i.e., Eh ----Em +--- 120 mV). T h e information here will describe the Nernst curve of the redox couple and provide the Emx value and the n value.
+
+The Choice of Oxidant and Reductant to Change Eh
+The E hand the redox state of the redox system are changed routinely by addition of solutions of freshly prepared, well-buffered sodium dithionite as a reductant and potassium ferricyanide as an oxidant. Obviously other oxidants and reductants can be used but dithionite and ferricyanide react promptly and provide a large Eh range which usually goes well beyond the scope of the most experiments. Thus it is an easy matter to obtain near 100% reduced and oxidized values for the redox state assay. Sodium dithionite can take the Eh down to the hydrogen half cell potentials (i.e., Em at,pH 7.0, --420 mV) where water is seen to be reduced into hydrogen.
+2 Dutton, P. L., and Wilson, D. F. (1974). Biochim. Biophys. Acta 346, 165-212. '~Dutton, P. L., and Prince, R. C. (1978). "'The Photosynthetic Bacteria" (R. K. Clayton
+and W. R. Sistrom, eds.). Plenum Press, New York, in press. 4 Prince, R. C., and Dutton, P. L. (1976). FEBS Lett. 65, 117-119. '~Petty, K. M., and Dutton, P. L. (1976).Arch. Biochem. Biophys. 172, 346-353. GLindsay, J. G., Owen, C. S., and Wilson, D. F. (1975). Arch. Biochem. Biophys. 169,
+492-505. ¢Wilson, D. F., Lindsay, J. G., and Brocklehurst, E. S. (1972).Biochim. Biophys. Acta 256,
+277-286.
+
+[23]
+
+REDOX POTENT1OMETRY
+
+419
+
+Care has to be exercised with dithionite since its oxidation products are strongly acidic. Dithionite solutions should be freshly prepared and well buffered (e.g., 0.5 M). There is no need to make up solutions of specified concentration. We tend to make up solutions strong enough so that small but controllable (microliter) volumes can be added to the redox system to elicit the desired En change. Dithionite solutions are more stable in the air at higher pH values, and keeping the solution cold and in a narrow tube also increases the time that it can be used. A "typical" time to give a dithionite solution would be 20-30 rain, but this depends on the nature of the system and the Eh range being studied. If long-term stability is required, the solution can be kept in an anaerobic vial fitted with a septum.
+On the oxidizing side, potassium ferricyanide can take the Eh up to a stable 530 mV. Typically, microliter additions of 100 mM or i0 mM solutions would be used to change the Eh. Higher Eh values with the ferri/ferrocyanide couple can be obtained if a little (<i /xM) cytochrome c peroxidase is added, followed by small additions of H202; the enzyme has a very low Km for ferricyanide, which on oxidation to ferricyanide can take the Eh up to over 600 mV.
+
+Practical Aspects of Correlating Eh and Redox State
+The physical methods chosen to measure the fraction ofa redox couple reduced or oxidized at a measured Eh value are usually dictated by the character of the redox couple. In many cases, Eh and the state of oxidation-reduction can be measured simultaneously and continuously. This is especially the case for room-temperature spectrophotometric determinations or if the couple displays a change in EPR signal or any other physically determinable parameter at room temperature. In certain cases, however, it is necessary to assay the state of reduction of a component at low temperature. In these cases biological material in which the redox constituents are poised at a known Eh value at room temperature can be removed, frozen to liquid nitrogen temperature, and assayed later.
+Figure 4 shows basic equipment for redox potentiometry, s Figure 4A ilhJstrates an anaerobic vessel for simultaneous measurement of redox potential and the state of reduction by optical means. This is suitable for a dual wavelength spectrophotometer. The light path is typically 1 cm, but cuvettes with light paths of as little as 2 mm are successful if the stirrer is turning directly over the slot at the top of the cuvette (see Fig. 4A). Stirring is as necessary in redox potentiometry as it is in measuring pH. It is convenient to have the magnetic bar suspended and rotated on a flat part of
+
+Dutton, P. L. (1971).Biochirn.Biophys. Acta 226, 63-81.
+
+420
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+- ~ To millivoltmeter Electrodes
+NO.4 silicon- Iff'l'l" ~~-Argon in
+rubber s t o p p e r S "
+Plostic screw
+
+To motor
+[]
+
+\ I cm Lightpath Q2cm Light path
+
+lControlled temperoture fluid
+FIG. 4. (A) Spectrophotometric cuvettes for redox potentiometric titrations at ambient temperatures. (B) A vessel for redox potentiometric titration in which samples are taken anaerobically and frozen for analysis at low temperatures.
+
+[23]
+
+REDOX POTENT1OMETRY
+
+421
+
+the vessel by a magnetic stirrer. Anaerobic conditions are required because oxygen is a strong oxidizing agent; by "anaerobic" we mean that gas (argon; for example Airco grade 5;99.999% minimum purity) with very low O., levels is continuously flushed over the biological suspension. The gas train need not be elaborate for normal work with mitochondria or photosynthetic material; all that is needed is a bubbler between the gas tank and the anaerobic redox vessel (this is to see if the gas is flowing and to "wet" the gas so that it does not evaporate the biological suspension). A bubbler for the gas exhaust is used to create a slight back pressure in the system and as an indicator of leaks. We usually use stainless-steel or copper tubing to carry the gas to the anaerobic cuvette. The stopper is made of silicone rubber. The side arms are capped with septums. Two side arms are not mandatory, but for further probes such as thermocouples or pH electrodes a second one can be useful.
+Figure 4B shows a vessel for measuring theEh of biological suspensions which is designed so that samples of knownEh can be transferred anaerobically to other vessels in which the redox state of the biological sample is to be measured. This approach is necessary for sample transfer into cuvettes for low-temperature spectrophotometry (see Dutton 8for a design) or into EPR tubes or other vessels which can be frozen for assay. Figure 4B shows how the receiving vessel (in this case an EPR tube) can be flushed free of air and the transfer can be effected. The gas supply enters the redox vessel via a needle in the stopper but comes out through a tube inserted through the septum of one side arm which is directed into the receiving vessel. At the sampling point, after the receiving vessel is flushed free of air, the stainless-steel needle or tube is dipped into the biological solution or suspension. Since there is now no exit for the incoming gas, a pressure builds up (extent governed by gas tank regulator) and pushes the suspension down the capillary and into the EPR tube. When sufficient sample has been taken the sampling tube is removed from the biological suspension and the EPR tube is withdrawn and promptly frozen for EPR analysis.
+
+Practical Notes About Electrodes
+a. The Measuring Electrode. This is usually a shiny strip of platinum fused into a glass rod. Other metals such as gold also can be used. The metal is in direct contact with the aqueous solution containing the redox system under assay.
+b. The Reference Electrode. So far we have talked about the standard hydrogen half cell or "electrode." In practical terms this half cell is cumbersome. Other more convenient '~secondary" standard half cells are
+
+422
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+available and of these the standard calomel or the silver/silver chloride half cells or electrodes are most commonly used. They are calibrated against the standard hydrogen electrodes and so the Eh of a redox system can still be worked out by adding the potential of the secondary standard to the measured redox potential. Table I shows some standard potentials of the calomel and silver/silver chloride electrodes, taken from references 9 and 10, showing their t e m p e r a t u r e d e p e n d e n c e relative to the standard hydrogen half cell which is deemed zero at all temperatures. For further information about the secondary and the hydrogen electrode, see Hills et al. ~-H T h e s e reference electrodes of the calomel or silver/silver chloride kind are made up of a metal in contact with an insoluble salt in turn in contact with a solution containing the chloride. Contact with the solution containing the redox system under assay is made via a salt bridge (made of either KCl-agar or a porous plug). Figure 4 shows a typical arrangement of commercial electrodes in redox measuring equipment. We usually use a Radiometer K401 saturated calomel standard reference calomel electrode and Radiometer Pl01 platinum measuring electrode.
+c. Routine Care of the Electrodes. The saturated KCI calomel electrode should be kept topped up with saturated KCI and when not in use maintained dipped in a similar KCI solution. The porous plug at the bottom should be kept free of precipitated protein and other organic matter, which can be removed by gently rubbing the end of the electrode on a flat sheet of extra-fine sandpaper. The platinum electrode should be kept shiny with occasional rubbing with fine abrasive. A new electrode system should be checked for proper function against other standard half cells.
+
+Redox Potential Measurement of Biological Redox Systems: The Requirement for Redox Mediators
+Unlike many small inorganic and organic redox couples, biological redox molecules and complexes, even when isolated from the membrane, are inert as far as the measuring electrodes are concerned. A predominant reason for this is that the redox center is often shielded by protein and so does not gain proper contact with the electrode surface. Redox mediators are required to act as go-betweens between the measuring electrode and the biological redox couple. Redox mediators are small organic or inorganic
+9Hills, G. J., and Ives, D. J. G. (1961).In "Reference Electrodes, Theory and Practice" (D. J. G. Ives and G. J. Janz, eds.), pp. 127-178. Academic Press, New York.
+J0Janz, G. J. (1961).In "Reference Electrodes, Theory and Practice" (D. J. G. Ives and G. J. Janz, eds.), pp. 179-230. Academic Press, New York.
+H Hills, G. J., and Ives, D. J. G. (1961).In "Reference Electrodes, Theory and Practice (D. J. G. Ires and G. J. Janz, eds.), pp. 71-127. Academic Press, New York.
+
+[23]
+
+REDOX POTENTIOMETRY
+
+423
+
+TABLE 1 SOME STANDARDPOTENTIALSOF THE CALOMEl_.AND SILVER/SILVER
+CHLORIDE ELECTRODES AT DIFFERENT TEMPERATURES
+
+Temperature
+
+Calomel electrode (V)
+
+Saturated KC1 1 N KCI 0.1N KCI
+
+Ag/AgCI electrode (V)
+
+10
+
+0.2541
+
+0.2839
+
+0.3343
+
+0.2314
+
+20
+
+0.2477
+
+0.2815
+
+0.3340
+
+0.2256
+
+25
+
+0.2444
+
+0.2801
+
+0.3337
+
+0.2224
+
+30
+
+0.2411
+
+0.2786
+
+0.3332
+
+0.2191
+
+Electrode reaction:
+
+Pt,H2 H + unit activity
+
+KCI solution
+
+Hg2Cl2~s) Hg Pt,H2 H + C I unit
+activity
+
+AgCl(s~ Ag
+
+redox agents; some are listed in Table II. There are several criteria that mediators must meet before redox potentiometry can be usefully employed:
+a. The Redox Mediator Must React Effectively and Reversibly with the Electrode and the Biological Redox Component. In the presence of a mediator, addition of oxidant or reductant to a biological suspension should, in a matter of seconds, elicit both a change of Eh registered at the electrode, and a corresponding change in the state of oxidation-reduction of the biological redox component. Simple as this may seem, for a variety of
+
+TABLE II SOME REDOX MEDIATORS
+
+Component
+
+Approx. Era7(mY)
+
+Potassium ferro/ferricyanide 2,3,5,6,-Tetramethyl phenylenediamine
+("diaminodurol" or DAD)
+N,N,N',N'-Tetramethyl phenylenediamine
+(TMPD) N-Methyl phenazonium methosulfate
+(PMS) N-Ethyl pbenazonium ethosulfate
+(PES) N-Methyl- 1-hydroxyphenazonium methosulfate
+(pyocyanine) 2-Hydroxyl- 1,4-naphthaquinone Anthraquinone-26-disulfonate Anthraquinone-2-sulfonate N,N'-Dibenzyl-4,4-bipyridinium dichloride
+(benzyl viologen) N, N'-Dimethyl-4,4,-bipyridinium dichloride
+(methyl viologen)
+
+430 260 260 80
+55
+- 34 - 145 - 185
+-225 -311 -430
+
+n value I 2 1 2 2
+2 2 2
+2 1 1
+
+424
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+reasons many redox mediators fail in one or both of these requirements when used in the concentration range (10-6-10 -'~ M) that is useful for biological experimentation.
+Failure of a redox couple to react effectively with the electrode is not confined to membrane- or protein-bound biological couples. For example, many organic redox couples that are candidates to serve as mediators are at equilibrium "two-electron" redox couples and have n values at or approaching 2.0. One rule of thumb regarding the strength of reaction with the electrode rests on the "stability" of the intermediate one-electron redox state or "semiquinone" analogue, which, being a free radical, interacts well with the electrode surface (see Chapter 7 in Clark I for a discussion of semiquinone analogues). Those n = 2 redox agents for which the semiquinone analogue is very "unstable" (e.g., duroquinone) are only weakly felt by the electrode in the 10-5-10-4 M concentration range. Those agents which have a relatively stable (e.g., the phenazines) or fully stable "semiquinone" (i.e., are visibly n = i redox agents such as tetramethyi phenylenediamine, methyl and benzyl viologen) are much more active and are effective in the 10-6-10-'~ M concentration range. Nevertheless, the effectiveness of relatively weakly interacting mediators can be improved by increasing their concentration.
+Redox mediators should be able to act not only in the aqueous phase of biological suspensions to make contact with the electrode, but should also be capable of transferring oxidizing and reducing equivalents into and through the membrane to make contact with membrane-bound redox components. This means that a redox mediator should not be so hydrophobic that it is partitioned almost entirely into the membrane, leaving insufficient mediator in the external aqueous medium to react effectively with the platinum electrode. Several quinones fall into this category. At the other extreme, polyionic mediators may not be hydrophobic enough. For example, potassium ferri/ferrocyanide is not a good membrane penetrant, and although a strong redox contact is made with the platinum electrode at low concentrations of the redox couple, direct interaction with membranebound biological redox components is slow and the direct contact weak. Again, the problems encountered with redox mediators that react only weakly with the biological redox components, for whatever the reason, can in many cases be overcome by simply increasing the concentration of the redox mediator if this does not adversely affect the experiment. However, a subtler way of dealing with the unfavorable partition of redox mediators between membrane and water is to use combinations of hydrophilic and hydrophobic redox mediators.
+The rates of the electrode-mediator-biological component reaction
+
+[23]
+
+REDOX POTENTIOMETRY
+
+425
+
+must be rapid enough to achieve a true equilibrium (i.e., one where all redox complexes in the biological electron-transfer system are at the same Eh) and not a quasi-equilibrium that is established with other redox events that may tend to shift the system out of true equilibrium. Such a shift can arise from the presence of oxygen in the system, which can vigorously interact with mediators and individual components of the biological electron-transfer system at widely differing rates. Alternatively or additionally, the presence of an active "endogenous reducing system" (i.e., the unspecified flux of reducing equivalents from stored substrates into the electron-transfer system) may also serve to act differentially with the mediators and the individual biological redox components. If the rates involving oxidation or reduction in these two examples are faster than the interaction with the added redox mediators, then the Eh measured at the electrode will diverge from the proper level of reduction exhibited by the various biological redox components. Again the problem can be combatted by increasing the concentration of the redox mediators, together with the use of multiple mediators to hold or buffer the ambient Eh. However, use of the anaerobic conditions eliminates the oxygen problem, and, if there is a choice, the use of a biological material that does not have a high endogenous reducing system avoids the other problem; rat liver mitochondria are especially difficult in this respect, while pigeon heart mitochondria are low enough in endogenous reductant that this is of no deleterious significance; photosynthetic systems are also generally not adversely affected by an endogenous reducing system.
+b. Redox Mediators Must Not Decompose Immediately on Oxidation or Reduction. Although this may seem an obvious point, many useful organic dyes used as mediators in redox potentiometry do not have an indefinite lifetime and, under certain conditions of pH or at Eh values that are far away from their midpoint, may undergo additional, irreversible oxidation or reduction reactions. Measuring beam light may also lead to the decomposition of certain redox mediators. Little systematic work has been done in this area, and our current knowledge is based on personal observations made during the course of many redox titrations on mitochondria and on photosynthetic bacterial chromatophores. It should be noted that some irreversible reactions may be catalyzed by the organelles rather than being intrinsic to the mediators themselves. Although this is not normally a major concern, the experimenter should be aware of this possibility and take steps to avoid the problem. The useful lifetime of a mediator can be tested under experimental conditions for periods much longer than the experimental time by checking for the promptness of the response of a redox component to a change in Eh. Correction for mediator decomposition can
+
+426
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+be made by adding flesh mediator(s) at the appropriate time. Alternatively the experiment can be performed in segments using new material and mediators for each segment.
+c. The Mediator Must Not Chemically Modify the Biological Redox Component. If the mediator acts as a substrate to a redox enzyme, or chemically interacts with one form of the redox component (directly or through other agents), then theE,, of the component being measured will be modified [i.e., the redox mediator becomes a ligand to the redox component as discussed in Eqs. (13) and (14)]. An example of this has been revealed (B. Cohen and D. F. Wilson, personal communication) in the reaction of methyl or benzyl viologen or other analogues with the detoxification enzyme cytochrome P-450. This problem can be revealed by performing redox titrations with chemically distinct redox mediators and by drastically varying the redox mediator concentration.
+d. The Mediator Should Not Interfere with the Accompanying Measurements of the State of Reduction of the Redox Couple Under Assay. Clearly, for example, if the state of reduction of a component is being measured optically, then a redox mediator itself undergoing optical changes concurrent with those of the agent being measured adds complications to the measurements. Similarly if the oxidized or reduced form of a redox component is being measured by afree radical EPR signal, complications arise from use of redox mediators which have similar signals in one or another of their redox states. It is an unfortunate fact that the best mediators are colored and undergo large absorbance changes on oxidation or reduction. They also often display significant free radicals in one of their oxidation states.
+This problem can be overcome by performing "control" redox titrations without the biological material to check for mediator interference. Caution should be exercised, however, in recognizing that a mediator may behave differently in the presence or absence of a biological sample (e.g., different "semiquinone" stability and hence different levels of free-radical formation). Redox mediator contribution in vivo can be deduced by repeating the titration with increasing amounts of redox mediators to establish the systematic contributions.
+
+General Rules about Reliability, Redox Mediators, and Redox Titrations
+As much information as possible should be obtained in order to increase confidence that titrations have been successfully performed at equilibrium. With the considerations outlined in the preceding section it is a common practice to:
+
+[23]
+
+REDOX POTENTIOMETRY
+
+427
+
+1. Perform redox titrations in both oxidative and reductive sequences. Identical results should be obtained; hysteresis implies disequilibrium.
+2. The redox titration should be repeated with as wide a variation in concentration of mediators as possible in the 10-6-10 -3 M range. Use of different chemical structures of redox mediators and various combinations of different redox mediators adds confidence to results.
+3. Ideally redox mediators should haveEm values that are similar (<60 mV difference) to the biological redox couple being measured. Reversibility becomes increasingly strained as the Eh is moved away from the Em and the [ox]/[red] ratio becomes too large or too small. For example, in titrating one biological redox couple it is best, although not always possible, to have three mediators of differing Eros so that together they more than cover the central part of the Nernst curve of the biological redox couple. If a redox titration is performed over a wide redox potential range, a string of redox mediators are used. Such extended redox titrations are common in exploratory work, and for the titration of certain respiratory or photosynthetic redox components which are present in electron-transfer systems as multiple electrochemical species of widely differing Em values but similar spectrometric properties.
+
+Redox Mediators and the Different Kinds of Poise They Establish with Biological Redox Systems
+Redox " p o i s e " is an index of the buffering capacity afforded by a redox mediator in the same way that pH buffers operate with acid-base change. Hence, the use of high concentrations of redox mediators will lead to a resistance to Eh change on the addition of oxidants or reductants such as ferricyanide or dithionite. As is well known for the pKs of pH buffers, the Eh region of greatest resistance is near to the Em value of the redox mediator. In performing a redox titration over a wide range with a string of different redox mediators the extent of Eh change for the same addition of oxidant or
+reductant will be different depending on how close the Eh value is to the E,,
+values of the mediators, and on how much of the mediator is present. It is a matter of experience to know how much oxidant or reductant to add to elicit the required change in Eh at different Ej~ values.
+The widely different rates with which redox mediators can react with biological electron-transfer components provides a means of obtaining both equilibrium thermodynamic information as well as pulsed activated kinetic data which is an expression of the equilibrium redox state before activation. This approach is applicable to photosynthetic systems but could be applied to the study of certain reactions in mitochondria, hemoglobin, and other respiratory systems. However, it is especially applicable to
+
+428
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+photosynthetic bacterial chromatophores, since their electron (proton) transfer system is cyclical and therefore requires no net input of reductant or oxidant; in this case an Eh can be established, and the chromatophores activated by one or more short single-turnover saturating flashes to induce a state of disequilibrium. The time course of the perturbation and relaxation can then be followed using rapid spectrometric techniques (see Dutton and WilsonZ).
+In this "poise and pulse" approach, several variants of the character of the redox poise are possible; the kind chosen depends on the material being studied. Two examples will serve to illustrate.
+1. An amount of redox mediator is added to biological suspensions sufficient to provide a reliable equilibrium Eh reading, but insufficient to interfere with in vivo kinetics after pulsed activation.
+With photosynthetic systems, particularly bacterial, redox potentiometry has been used in combination with kinetic analysis of flashinduced reactions from 10-12 sec to the seconds time range. Clearly the slower the time range studied, the more likely that redox mediator interference will be encountered, so the experimental conditions required to achieve equilibrium before activation and yet generate no kinetic contributions after activation become more stringent. In this kind of experiment the amount of redox mediator (i.e., the degree of buffering) is not of primary importance. The important condition is the absence of kinetic interference from the redox mediators, which will attempt to reestablish the equilibrium state by interacting with the redox components that are transiently out of equilibrium with the redox mediators. This problem can be tested and overcome by repeating kinetic analysis of components involved over the Eh range studied with a wide variation of redox mediators, and selecting the appropriate redox mediators. With care we have been able to obtain kinetics of cytochrome and reaction center oxidation-reduction up to I sec after microsecond flash activation, without significant interference starting from a reasonably reliable Eh value.
+A special case of this kind of poise and pulse approach is the establishment of a reliable Eh value at room temperature, followed by anaerobic sampling as in Fig. 4 and freezing for light-induced analysis at temperatures down to liquid helium temperatures. At these temperatures kinetic contributions from redox mediators are negligible.
+2. A catalytic quantity (i.e., concentration less than the biological redox components) of rapidly interacting redox mediator is used to provide a reliable Eh reading before activation, but after activation it contributes no buffering capacity to tend to hold the system at the starting Eh. This is applicable to multiple turnover activations that in number are in significant excess of the redox equivalents in the mediator.
+
+[23]
+
+REDOX POTENTIOMETRY
+
+429
+
+Some Redox Titrations and Use of Redox Mediators
+This section deals generally and briefly with some examples of redox titrations to illustrate the use of redox mediators.
+Redox Potential Titrations of Cytochromes Analyzed in Combination with Room-temperature Dual Wavelength Spectrophotometry. Cytochromes are most often analyzed spectrophotometrically as the reduced form by their Soret or T-bands (in the 400-460 nm range) or their a-bands (540-620 nm). Reduced minus oxidized difference extinction coefficients are much larger for the y-bands as compared with the a-bands. In spite of this our current collection of redox mediators is best suited for work in the a-band region. Difference spectroscopy for the analysis in the a-band region of cytochromes a, b, and e is essentially free of absorbance interference from the redox mediators themselves (i.e., redox mediators up to the 10-5-10 -4 /aM concentration range with reduced minus oxidized absorbance changes for the cytochromes in the region of 0.01-0.02 AA and above). This statement is true from high En values down to about 0 mV at pH 7.0. Thus, for example, the redox mediators potassium ferricyanide, DAD, PMS, PES, and duroquinone (and many other quinones) are particularly good in that their own redox-associated absorbance changes are not registered by wavelength pairs typically used for cytochrome assay. Below 0 mV (at pH 7.0 or from this value --60 mV/pH unit), however, precautions have to be taken against possible interference from pyocyanine, 2-hydroxy-l,4,-napthaquinone and the anthraquinones and the viologens (see next section).
+In the y-band region caution has to be exercised for most of the redox mediators since virtually all the mediators undergo some absorbance changes of their own on oxidation and reduction. The problem can be minimized or eliminated by the appropriate choice of wavelength pairs used in the measurement. However, a rather serious problem in the y-band region is encountered at high Eh values when the yellow potassium ferricyanide assumes significant concentrations; this leads to major distortions of the redox titrations of such high midpoint potential cytochromes as cytochrome a 3 (Era7 = 380 mY; see Dutton et a1.12"1:~)from respiratory systems, or the high-potential c-type cytochromes from photosynthetic bacterium Chromatium vinosum, or c y t o c h r o m e f and the high-potential form of cytochrome b55.~of chloroplasts. Unfortunately, the interference from ferricyanide is greatest at the sensitive Eh values beyond the E,, value where its contributions prevent the direct measurement of the near-100%-
+
+12 Wilson, D. F., and Dutton, P. L. (1970). Arch. Biochem. Biophys. 136, 583-584. ~:~Dutton, P. L., and Storey, B. T. (1971). Plant Physiol. 47, 282-288.
+
+430
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+oxidized absorbance value of these kinds of high-potential cytochromes. Careful subtraction of the ferricyanide contribution is necessary.
+I have purposely avoided giving any numbers regarding expected difference extinction coefficients of the redox mediators; these should be established experimentally for any particular set of determinations. The relative significance of mediator contributions is entirely dependent on the experimental conditions and the level of sophistication at which the work is pitched. For basic work it is no more serious than spectrophotometric interference from endogenous absorbance changes and often it is an easier matter to eliminate.
+For general exploratory work, apart from following the guidelines described in the earlier sections of this article, it is a good idea to perform dual wavelength spectrophotometric analysis of redox titrations in both T- and o~-band regions and to use different reference wavelengths (e.g., analysis of c y t o c h r o m e b at 560 nm in the o~-band region can be done with the reference wavelength at 540 nm or 575 nm); this will detect interference from color changes from agents with broad spectra (redox mediators or endogenous redox components such as flavin). Alternatively, redox titrations can be done at different measuring wavelengths which permits the construction of E~-resolved spectra of the redox components involved (e.g., Dutton and Jackson14). However, with the advent of the scanning dual wavelength spectrophotometer the need to perform several determinations is eliminated, and all the information can be obtained in one redox titration. A titration of this kind is shown in Fig. 5: it illustrates the almost complete ~5 freedom of the titration from interference by redox mediators.
+
+Experimental Tactics Regarding Use of Redox Mediators
+a. Degas Supporting Medium. Before adding the aliquot of concentrated biological material or the redox mediators to the redox vessel/ cuvette, degas the supporting aqueous medium by bubbling with argon for a few minutes. Bubbling is necessary since stirring under an atmosphere of argon takes a long time to degas. The degassing avoids any damage of the redox mediators by the interaction of the biological material and oxygen. It also saves having to wait for "anaerobiosis" induced by the biological respiratory system which may be weak in the absence of substrates. In such a case degassing therefore eliminates the need to unnecessarily add substrates or sodium dithionite.
+b. An Example of a Redox Titration Requiring Eh Values above and below 300 m V . Mitochondrial c y t o c h r o m e a (EmT.2 = 210 mV) and cyto-
+~4Dutton, P. L., and Jackson, J. B. (1972).Eur. J. Biochem. 30, 495-510. ~ Erecinska, M., Oshino, R., Oshino, N., and Chance, B. (1973).Arch. Biochem. Biophys.
+157, 431-445.
+
+[23]
+
+REDOX P O T E N T I O M E T R Y
+
+5 (~,~."',
+-
+yI / j ~ 3\ ~
+
+I 85 ( - mY) 2 65 " 3 4 5 ,,
+
+,5~
+
+,2o~
+
+,. ..
+
+431
+
+T
+O.05A
+L_
+
+8 ~t
+
+5 ','~
+
+/
+
+~
+
+~ "
+
+I I0 (÷mV) 2 17
+4 50
+6 85 , 8 ~45
+
+6 ' •
+',
+
+~ t95 (*mY}
+
+210
+
+"
+
+245
+
+,,
+
+4 260 "
+
+5 280 ,,
+
+6 29,5 ,,
+
+5;0
+
+s~o
+
+5;o
+
+s;o
+
+X (nm)
+
+Flo. 5. Difference spectra of the cytochromes of succinate-cytochrome c reductase obtained during anaerobic potentiometric titration of the preparation. The succinatecytochrome c reductase (2 mg proteirdml) was stirred under an argon atmosphere in 0.1 M phosphate buffer, pH 7.0 (0.008% Triton X-100, 0.008% deoxycholate). The redox mediators used were: 20 pM diaminodurol; 40 pM each of phenazine methosulfate, phenazine ethosulfate, and duroquinone; 5 pM pyocyanine, and 15 pM 2-hydroxyl-l,4-naphthoquinone. The figure shows an oxidative titration with potassium ferricyanide. The reference wavelength was 595 nm, and the scanning speed was 1.3 min/100 nm. Upper traces represent the absorbance changes taken in the potential range: --100 to --10 mV showing principally cytochrome bs,~; middle: - 10 to + 145 mV showing principally cytochrome bs,o; bottom traces: + 145 to +275 mV showing principally cytochrome c~.
+
+c h r o m e a 3(Era7.2 = 380 mY) are a good e x a m p l e . (1) Degas m e d i u m a n d add mitochondria. (2) Set wavelengths, for example, at 605-630 nm. The a-band region usually precludes the use of TMPD, which undergoes absor-
+bance changes here, but does permit the use of DAD which has no absor-
+bance contributions. (3) Add 5-100 p34 DAD, chosen because it has an E,,
+value similar to that of cytochrome a ; add 5-50 ~M PMS (also no absorb a n c y contribution) to permit reliable Eh m e a s u r e m e n t s at about 100 mV
+for the n e a r - 1 0 0 % r e d u c e d c y t o c h r o m e a/a3 a b s o r b a n c e v a l u e . P M S is n o t
+
+432
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+obligatory but it does increase the reliability of the titration. (4) Add dithionite until Eh is -- 100 mV; this is the maximum absorbance value of the titration. (5) Establish that the absorbancy measurement is not drifting with time for reasons other than oxidation-reduction; this base line is the 100% reduced value, and all numbers are referred to it. If it drifts during the experiment there will be significant errors. (6) Start adding ferricyanide, taking Eh readings at each new level of decreased absorbance. At each reading make sure values are steady; this may take 0.25-2 min and might be generally slowly drifting back to lower Eh values aided by the endogenous reducing supply. (7) As the 300 mV Eh is passed the stability of the DAD decreases. There is, however, no particular concern for this because there will be sufficientferro/ferricyanide accumulated to take over as a mediator; if disequilibrium is indicated by instability of Eh with respect to the absorbance reading, some ferrocyanide (e.g., 50 pM) can be added. The titration is completed by taking the Eh as high as possible to a point where little AA occurs on changing the Eh. This should be about 500 mV; however, the addition of extra ferrocyanide may make it difficult to achieve 500 mV without adding enormous amounts of ferricyanide (e.g., with 50 p3V/ferrocyanide present it will take 50 pJV/to get the Em and 500/zM to achieve an Em value 60 mV beyond that). (8) If a reduction titration is done on the same material, then at Eh values just below 300 mV more DAD and PMS should be added to allow reliable Eh values to the completion of the titration; if a formal reductive experiment is not done, dithionite should still be added to check that the original starting absorbance has not changed during the titration since this is vital to calculation. A reductive titration can be done in a separate experiment. In this case, after the system is anaerobic a small amount of DAD (e.g., 10/aM) can be added (no ferrocyanide or PMS) to aid membrane mediation offerricyanide. The Eh can then be promptly taken up as high as possible to establish the near-100% absorbance level. The Eh is then lowered by adding ferrocyanide until about 50-100 /zM has been added (this increases the ferro/ferricyanide mediation concentration) and then by adding dithionite or by allowing endogenous reductant to act if this is a suitable rate (the rate can be adjusted by the amount of mediator present). Again at 300 mV DAD and PMS are added and the titration taken to completion at 100 mV. (9) If the titration is repeated in the y-band region (445-455 nm), then the DAD can be replaced by TMPD again acknowledging that TMPD irreversibly decomposes at Eh values above 300 mV. As discussed before, ferricyanide unavoidably contributes in this region and requires a full accounting for the additions of ferri- and ferrocyanide and control experiments. PMS, not used in the published titrations, would have to be checked also and if necessary accounted for or replaced, or since it is not obligatory, eliminated.
+
+[23]
+
+REDOX POTENTIOMETRY
+
+433
+
+c. Wide E h R a n g e Titrations. The procedure outlined above is the basis for all titrations. In the s-band region there are areas below 0 mV at pH 7.0 where redox mediators that we have used contribute significant absorbance changes if used in large amounts. Pyocyanine is blue (neutral pH) or purple (acid pH) in the oxidized form; this is as good a mediator as PMS or PES so it can be used in small (5/aM) amounts. To increase the poise in the 0 to
+100 mV Eh range, duroquinone, itself ineffectual as far as its interaction
+--
+with the electrode, is usually added with it; together they satisfy many of the criteria required of redox mediators. 2-Hydroxyl-1,4-naphthaquinone and the anthraquinone sulfonates can contribute so these should be kept at low levels (<20 /aM) or otherwise be controlled for. Thus by adding anthraquinone-2-sulphonate, anthraquinone-2,6-disulphonate, 2-hydroxyl1,4-naphthaquinone, pyocyanine and duroquinone, PES, PMD, DAD, and ferrocyanide an Eh titration can be performed at pH 7.0 from -- 250 to + 500
+mV.
+Often wide-range Eh titration such as has been encountered in cytochrome b titrations of FeS proteins (see, e.g., Dutton et al. ~4-,7) takes quite a long time to perform, depending obviously on the number ofE~/absorbance correlations taken. They can take hours if equilibration with the redox components is slow. It is essential in continuous-absorbance titrations to periodically check the near-100% reduced or oxidized level to make sure it has not shifted on the chart paper. Alternatively, the titration can be done in separate pieces paying attention to different Eh ranges on each determination.
+It is important to repeat titrations with differing redox mediator concentrations. The same results should be obtained each time not only with respect to the Em but also with regard to the shape of the titration curve and its overall absorbance change. Systematic distortion of redox curves or systematic increases in the overall absorbance change of the titration indicate mediator interference.
+With examination of the state of reduction by EPR (e.g., cytochromes or iron-sulfur proteins) over a wide E~ range there is usually no limitation on the redox mediators added. This freedom applies to EPR free-radical signals not at g 2; otherwise it becomes very important to use dyes with little or no interfering g 2 signal of their own in the Eh range being examined. If possible the problem can be circumvented by the different microwave power properties of the biological redox couple and the mediators (see Ingledew et al. is).
+16Dutton, P. L., Wilson, D. F., and Lee, C. P. (1970). Biochemistry 9, 5077-5082. 17Ohnishi, T. (1975). Biochim. Biophys. Acta 387, 475-490. is Ingledew, W. J., Salerno, J. C., and Ohnishi, T. (1974). Arch. Biochem. Biophys. 177,
+176-184.
+
+434
+
+SPECIALIZED TECHNIQUES
+
+[23]
+
+d. Low-temperature Analysis. Questions are often asked regarding the relevance of redox potential at low temperature and the possible shifts in E m as the temperature is lowered. Although the Em values of redox components almost certainly change as the temperature is lowered, it is unlikely that a sample of known Eh and state or reduction at room temperature will change its state of reduction if promptly ( ~ 1 sec) frozen to liquid nitrogen temperatures. Even if redox mediator and the measured biological redox component differentially change their E,, values and they are both in a partly reduced state at the point of freezing, activation energies for electron transfer prohibit electron transfer from occurring on a time scale that hinders the measurement. Although it cannot be ruled out, there has been no report of such interference, and there are now many examples of redox determinations done at both room and cryogenic temperatures. Most Em values agree within 15 mV (see, e.g., Dutton and Wilson2).
+
+Analytical Procedures for Resolving into Component Parts Redox Titrations Containing Multiple Electrochemical Species
+In almost all cases redox titrations of biological electron-transfer systems involve more than one redox component. This arises from the multiple components having the same spectrometric properties but differing Em values [e.g., the multiple iron-sulfur proteins which have similar EPR line shapes and g values, or multiple cytochrome species such as the two or three (or more) b cytochromes evident in many systems, cytochrome c and c ~, or c y t o c h r o m e a and a~]. F o r two c o m p o n e n t s this makes plots such as those in Fig. !B sigmoidal, approaching linearity and with the slope for the n value only at the extremities (see Wilson and Dutton~9). For example, cytochrome oxidase would involve the ratio [aox][a3ox]/[areo][a3red]. If there are more components, as is often the case with the b cytochromes or Fe-S proteins, this Nernst plot becomes a series of steps. The "height" of the steps depends on the separation in the E,, values of the components. With separations of above 150 mV as in the case of c y t o c h r o m e a and a 3for which the relative contributions to the overall titration are equal, the resolution is simple. It is a matter of taking a point between the two Nernst curves and calling the value 100% oxidized for cytochrome a. This of course is an approximation but usually the error is much less than the experimental uncertainty. When the Em difference is smaller than 100 mV or if there is a large amount of one component compared to the other, the above simple approach leads to errors that may be significant. Computer techniques are then applicable to completely resolve the curves. Simple
+~'~Wilson, D. F., and Dutton, P. L. 0970). Biochem. Biophys. Res. Commun. 39, 59-64.
+
+[24]
+
+MICRO METHODS FOR QUANTITATIVE DETERMINATION
+
+435
+
+examples have been devised by M. Pring (see OhnishW, and Dutton et al.2°), with other ones given by Denis 21 and Hendler et al."2
+
+Acknowledgments
+I would like to express my gratitude to the National Science Foundation (grant nos. GB 28125 and later PCM-76-14902)and to the U.S. National Institutes of Health (grant no. PHS GM 12202)and to acknowledge my USPHS Research Career Development Award (1-K04GM 70771)for financialsupport during the development of this technique. Thanks are also due to Roger Prince and Kenneth Wells and to Margaret Mosely and Barbara Bashford for their suggestions and help with the manuscript.
+`20Dutton, P. L., Erecinska, M., Sato, N., Mukai, Y., Pring, M., and Wilson, D. F. (1972). Biochim. Biophys. Acta 267, 15-24.
+2~ Denis, M. (1973). Ph.D. Thesis, University of Marseilles. .22 Hendler, R. W., Town, D. W., and Shrager, R. L. (1975). Biochirn. Biophys. Acta 376,
+42-62.
+
+[24] Micro Methods for the Quantitative Determination of Iron and Copper in Biological Material
+By HELMUT BEINERT
+Introduction
+There are many different methods available for the determination of iron and copper, chemical and spectroscopic; and for the chemical determination a great number of reagents have been proposed. No single investigator can be expected to have experience with all these methods, and it is reasonable that an investigator use the method that he has set up and working and in which he has gained confidence. The description that follows is therefore aimed at those who do not have a method set up and reliably working in their laboratory and who prefer to resort to chemical determinations rather than purely spectroscopic ones. However, irrespective of the final determination of the metal, which can be carried out by various means, the preparation of the samples for the final determination shares common features in most instances. In this respect also the precautions to be taken with the two metals, iron and copper, are very similar, since they are both ubiquitous contaminants. The main problem can be stated as this: The difficulty does not lie in finding the metal that is there, but rather in not finding metal that does not belong there.
+
+METHODS IN ENZYMOLOGY, VOL. LIV
+
+Copyright © 1978by Academic Press, Inc. All rightsof reproductionin any formreserved.
+ISBN 0-12-181954-X
+

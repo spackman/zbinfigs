@@ -18,8 +18,9 @@ dependencies = [
   "xhtml2pdf>=0.2.16",
   "marker-pdf>=1.1.0",
   "tqdm>=4.67",
-  "fpdf>=1.7.2",
+  "reportlab>=4.2.5",
   "pillow>=10.4.0",
+  "pypdf2>=3.0.1"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",

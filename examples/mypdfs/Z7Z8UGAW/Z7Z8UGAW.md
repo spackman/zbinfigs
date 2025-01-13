@@ -1,0 +1,101 @@
+Skip to main contentSkip to article
+
+Brought to you by:Colorado School of Mines
+
+- Journals & Books
+- Search
+- RegisterSign in
+- View **PDF**
+- Download full issue
+
+#### **Outline**
+
+- 1. References
+### **Cited by (153)**
+
+![](_page_0_Picture_10.jpeg)
+
+#### **Journal of Magnetic Resonance (1969)**
+
+Volume 28, Issue 1, October 1977, Pages 133-136 Journal of Magnetic ...
+
+## **Communication**
+
+# **19F magnetic resonance imaging**
+
+Author links open overlay panelG.N Holland, P.A Bottomley, W.S Hinshaw Show more Add to Mendeley Share Cite https://doi.org/10.1016/0022-2364(77)90263-3Get rights and content • Previous article in issue • Next article in issue View PDF
+
+#### **References**
+
+1. P.C Lauterbur Nature, 242 (1973), p. 190 CrossRefView in Scopus 2. W.S Hinshaw Phys. Lett. A, 48 (1974), p. 87 View PDFView articleView in Scopus 3. P.C Lauterbur Pure Appl. Chem., 40 (1–2) (1974), p. 149 CrossRefView in Scopus 4. A.N Garroway, P.K Grannell, P Mansfield J. Phys. C, 7 (1974), p. L457
+
+CrossRefView in Scopus 5. P Mansfield, P.K Grannell Phys. Rev. B, 12 (1975), p. 3618 View in Scopus 6. A Kumar, D Welti, R.R Ernst J. Magn. Resonance, 18 (1975), p. 69 View PDFView article 7. W.S Hinshaw J. Appl. Phys., 47 (1976), p. 3709 View in Scopus 8. P Mansfield, A.A Maudsley Brit. J. Radiol., 50 (1977), p. 188 CrossRefView in Scopus 9. P.C Lauterbur lecture presented at British Biophysical Society Meeting, Oxford (March 27–30, 1977) 10. R Damadian Science, 171 (1971), p. 1151 CrossRefView in Scopus 11. C.F Hazelwood, G Cleveland, D Medina J. Nat. Cancer Inst., 52 (1974), p. 1849 12. I.C Kiricuta, V Simplaceanu Cancer Res., 35 (1975), p. 1164 View in Scopus 13. D.P Hollis, L.A Saryan, J.C Eggleston, H.P Morris J. Nat. Cancer Inst., 54 (1975), p. 1469 CrossRefView in Scopus 14. H.Y Carr Phys. Rev., 112 (1958), p. 1693 View in Scopus 15. Symposium on Inert Organic Liquids for Biological Oxygen Transport, Fed. Proc., 29, Atlantic City, NJ., April 1969 (1970), pp. 1698-1820 16. Symposium on Artificial Blood, Fed. Proc., 34, Bethesda, Md., April 1974 (1975), pp. 1428-1531 17. W Rudowski, E Kostrzewska Ann. Roy. Coll. Surg. Engl., 58 (1976), p. 115 View in Scopus 18. L.C Clark Jr., F Gollan Science, 152 (1966), p. 1755 CrossRefView in Scopus 19. J.H Modell, E.J Newby, B.C Ruiz Fed. Proc., 29 (1970), p. 1731 View in Scopus **Cited by (153)**
+
+2024, Computer Vision and Image Understanding Show abstract
+
+#### **Synthesis and in vitro evaluation of novel indanone derivatives targeting** β**-amyloid**
+
+2024, Results in Chemistry Show abstract
+
+#### **Overview and progress of X-nuclei magnetic resonance imaging in biomedical studies**
+
+2023, Magnetic Resonance Letters
+
+Show abstract
+
+#### **Preparation of PFPE-Based Polymeric Nanoparticles via Polymerization-Induced Self-Assembly as Contrast Agents for <sup>19</sup>F MRI**
+
+2023, Biomacromolecules Show abstract
+
+#### **Partially fluorinated nanoemulsions for <sup>19</sup>F MRI-fluorescence dual imaging cell tracking**
+
+2022, Colloids and Surfaces B: Biointerfaces Show abstract
+
+#### **A Multifunctional Contrast Agent for <sup>19</sup>F-Based Magnetic Resonance Imaging**
+
+2022, Bioconjugate Chemistry Show abstract View all citing articles on Scopus View Abstract Copyright © 1977 Published by Elsevier Inc.
+
+#### **Recommended articles**
+
+**Water-soluble tetraaqua Ln(III) glycinehydroximate 15-metallacrown-5 complexes towards potential MRI contrast agents for ultra-high magnetic field**
+
+Polyhedron, Volume 114, 2016, pp. 165-171 Maria S. Muravyeva, …, Irina V. Mukhina View PDF
+
+#### **Luminescence efficiency of (Lu,Gd)2 SiO5 :Ce (LGSO:Ce) crystals under X-ray radiation**
+
+Radiation Measurements, Volume 80, 2015, pp. 1-9 C. Michail, …, I. Valais View PDF
+
+#### **Q-Space Modeling in Diffusion-Weighted MRI**
+
+Brain Mapping, Volume 1, 2015, pp. 257-263 I. Aganj, …, N. Harel View PDF Show 3 more articles
+
+#### **Article Metrics**
+
+Citations
+
+• Citation Indexes: 151
+
+Captures
+
+• Readers: 57
+
+Social Media
+
+• Shares, Likes & Comments: 9
+
+![](_page_2_Picture_26.jpeg)
+
+#### View details
+
+- About ScienceDirect
+- Remote access
+- Shopping cart
+- Advertise
+- Contact and support
+- Terms and conditions
+- Privacy policy
+
+Cookies are used by this site. Cookie settings | Your Privacy Choices
+
+All content on this site: Copyright © 2024 Elsevier B.V., its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the Creative Commons licensing terms apply.
+

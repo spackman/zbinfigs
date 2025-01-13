@@ -63,20 +63,24 @@ class Collection:
         # Check for PDF files
         pdf_files = [f for f in file_list if f.lower().endswith(".pdf")]
         for pdf in pdf_files:
-            if os.path.exists(pdf):
-                self.logger.info(f'The .pdf file exists for {row["Title"]}: {pdf}')
-                return pdf
+            # Resolve the absolute path
+            pdf_absolute = os.path.abspath(pdf)
+            if os.path.exists(pdf_absolute):
+                self.logger.info(f'The .pdf file exists for {row["Title"]}: {pdf_absolute}')
+                return pdf_absolute
             else:
-                self.logger.warning(f'The .pdf file does not exist for {row["Title"]}: {pdf}')
+                self.logger.warning(f'The .pdf file does not exist for {row["Title"]}: {pdf_absolute}')
         
         # Check for HTML files if no valid PDF found
         html_files = [f for f in file_list if f.lower().endswith(".html")]
         for html in html_files:
-            if os.path.exists(html):
-                self.logger.info(f'Using the HTML file for {row["Title"]}: {html}')
-                return html
+            # Resolve the absolute path
+            html_absolute = os.path.abspath(html)
+            if os.path.exists(html_absolute):
+                self.logger.info(f'Using the HTML file for {row["Title"]}: {html_absolute}')
+                return html_absolute
             else:
-                self.logger.warning(f'The HTML file does not exist for {row["Title"]}: {html}')
+                self.logger.warning(f'The HTML file does not exist for {row["Title"]}: {html_absolute}')
 
         # If no valid files were found
         self.logger.warning(f'No valid file found for {row["Title"]}.')
