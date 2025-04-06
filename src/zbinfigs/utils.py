@@ -247,7 +247,8 @@ def _gather_images_from_folders(selected_folders: List[str]) -> Tuple[List[str],
     
     for folder in tqdm(selected_folders, desc="Gathering PDF images", unit="folder"):
         folder_images = [f for f in os.listdir(folder) if f.endswith('.jpeg')]
-        start = len(image_paths)
+        # ensure that page ranges are one indexed
+        start = len(image_paths) + 1
         end = len(image_paths) + len(folder_images)
         image_paths.extend([os.path.join(folder, f) for f in folder_images])
         image_indices[os.path.basename(folder)] = (start, end)
@@ -296,6 +297,7 @@ def _save_page_ranges_to_csv(image_indices: dict, file_range: Tuple[int, int], p
                 'file': folder,
                 'start': start,
                 'end': end,
+                'total_figures': end - start + 1,
                 'total_pages': total_pages
             })
         else:
@@ -304,6 +306,7 @@ def _save_page_ranges_to_csv(image_indices: dict, file_range: Tuple[int, int], p
                 'file': folder,
                 'start': start,
                 'end': end,
+                'total_figures': end - start + 1,
                 'total_pages': 0  # If no PDF is found, mark as 0 pages
             })
     
@@ -444,11 +447,150 @@ def merge_summary_pdfs(pdfs_folder: str) -> None:
     print(f"Merged PDF saved as: {merged_pdf_path}")
     print(f"Updated CSV saved as: {combined_csv_path}")
 
-def sort_annotated():
-    # locate the images based on their annotations and sort into 
-    # folders accordingly - rename the figures to avoid name clashes
-    return
 
-def add_annotations():
-    # add annotations to the main .csv file
-    return
+def sort_annotated(pdfs_folder: str, annotations_csv: str, summary_csv: str = "figure_summary.csv") -> None:
+    """
+    Sorts images based on categories from an annotations CSV file and organizes them into corresponding folders.
+
+    Args:
+        pdfs_folder (str): The folder containing the PDF files and images.
+        annotations_csv (str): Path to the CSV file containing annotations.
+        summary_csv (str): Path to the CSV file with summary data (default is "figure_summary.csv").
+    """
+    # Initialize logging
+    logger = _initialize_logger()
+
+    # Read input CSV files
+    summary_csv_path = os.path.join(pdfs_folder, summary_csv)
+    summary_data = pd.read_csv(summary_csv_path)
+    annotations = pd.read_csv(annotations_csv)
+
+    # Process each category from the annotations
+    categorized_pages = set()
+    for column in annotations.columns:
+        # Create folder for each category
+        _create_category_folder(column)
+
+        # Get the pages for the current category
+        pages = annotations[column].dropna()
+
+        for page in pages:
+            categorized_pages.add(page)
+            image_path = _get_image_path_for_page(page, summary_data, pdfs_folder)
+            if image_path:
+                # Copy the image to the category folder
+                _copy_image_to_category_folder(image_path, column)
+            else:
+                logger.warning(f"Page {page} not found in range. Skipping...")
+
+    # Handle uncategorized pages
+    uncategorized_folder = "uncategorized"
+    _create_category_folder(uncategorized_folder)
+
+    for page in range(summary_data['end'].max()):
+        if page not in categorized_pages:
+            image_path = _get_image_path_for_page(page, summary_data, pdfs_folder)
+            if image_path:
+                _copy_image_to_category_folder(image_path, uncategorized_folder)
+
+    logger.info("Annotated images sorted successfully.")
+
+
+def _create_category_folder(category: str) -> None:
+    """
+    Creates a folder for the given category if it does not already exist.
+
+    Args:
+        category (str): The name of the category for the folder.
+    """
+    os.makedirs(category, exist_ok=True)
+
+
+def _get_image_path_for_page(page: int, summary_data: pd.DataFrame, pdfs_folder: str) -> str:
+    """
+    Retrieves the image file path for a given page.
+
+    Args:
+        page (int): The page number.
+        summary_data (pd.DataFrame): Dataframe containing summary information.
+        pdfs_folder (str): The folder containing the PDF files and images.
+
+    Returns:
+        str: The path to the image file for the specified page.
+    """
+    page_mask = (page >= summary_data['start']) & (page <= summary_data['end'])
+
+    # return none if page not in any range
+    if page_mask.sum() != 1:
+        return None
+    else:
+        file = summary_data["file"][page_mask].values[0]  
+        image_index = int(page - summary_data['start'][page_mask].values[0])
+        image_name = _get_image_name_for_file(file, image_index, pdfs_folder)
+
+        return os.path.join(pdfs_folder, file, image_name)
+
+
+def _get_image_name_for_file(file: str, image_index: int, pdfs_folder: str) -> str:
+    """
+    Retrieves the image name for a given file and image index.
+
+    Args:
+        file (str): The file name.
+        image_index (int): The index of the image.
+
+    Returns:
+        str: The image file name.
+    """
+    file_folder = os.path.join(pdfs_folder, file)
+    image_names = [jpeg for jpeg in os.listdir(file_folder) if jpeg.endswith(".jpeg")]
+    return image_names[image_index] if image_names else ""
+
+
+def _copy_image_to_category_folder(image_path: str, category_folder: str) -> None:
+    """
+    Copies the image file to the specified category folder.
+
+    Args:
+        image_path (str): The path to the image file.
+        category_folder (str): The folder where the image should be copied.
+    """
+    shutil.copy(image_path, os.path.join(category_folder, os.path.basename(image_path)))
+
+
+def add_annotations(pdfs_folder: str, collection_csv: str, annotations_csv: str, summary_csv: str = "figure_summary.csv", outfile: str = "annotated_collection.csv") -> pd.DataFrame:
+    """
+    Adds annotation data to the collection CSV and returns the updated dataframe.
+
+    Args:
+        pdfs_folder (str): The folder containing the PDF files and images.
+        collection_csv (str): Path to the collection CSV file.
+        annotations_csv (str): Path to the annotation CSV file.
+        summary_csv (str): Path to the summary CSV file.
+        outfile (str): Path to the output CSV file.
+
+    Returns:
+        pd.DataFrame: The updated collection dataframe.
+    """
+    # Read input CSV files
+    summary_csv_path = os.path.join(pdfs_folder, summary_csv)
+    summary_data = pd.read_csv(summary_csv_path)
+    annotations = pd.read_csv(annotations_csv)
+    collection_data = pd.read_csv(collection_csv)
+
+    # Get the total number of images in each category for each file
+    category_counts_data = []
+    for idx, row in summary_data.iterrows():
+        category_counts = {"Key": row["file"]}
+        for category in annotations.columns:
+            count = sum((annotations[category] >= row["start"]) & (annotations[category] <= row["end"]))
+            category_counts["total_" + category] = count
+        category_counts_data.append(category_counts)
+
+    # Merge new columns with the original collection data
+    updated_collection = pd.merge(collection_data, pd.DataFrame(category_counts_data), how="left", on="Key")
+
+    # Save updated collection to CSV
+    updated_collection.to_csv(outfile, index=False)
+
+    return updated_collection

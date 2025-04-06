@@ -214,6 +214,7 @@ class Collection:
 
         return file_type_counts
 
+
     def plot_pdfs_available(self, plot_type: str = "bar", x_axis: Optional[str] = "year") -> plt.Figure:
         """
         Plots the number of available PDF files and HTML files relative to the total number of records.
@@ -227,7 +228,6 @@ class Collection:
         Returns:
             plt.Figure, plt.Axis: The figure and axis object containing the plot.
         """
-        # Get file type counts by year
         file_type_counts = self._get_file_type_counts()
 
         if plot_type == "bar":
@@ -238,6 +238,15 @@ class Collection:
             self.logger.error(f"Invalid plot type: {plot_type}. Must be 'bar' or 'pie'.")
             raise ValueError("Invalid plot type. Choose 'bar' or 'pie'.")
 
+    def _get_plot_colors(self) -> List[str]:
+        """
+        Returns a fixed color scheme for the plot.
+        
+        Returns:
+            List[str]: A list of color codes for the plot.
+        """
+        return ['#DB7069', '#69A3DB', 'gray']
+    
     def _plot_stacked_bar_chart(self, file_type_counts: Dict[str, Dict[int, int]], x_axis: str) -> plt.Figure:
         """
         Helper method to plot a stacked bar chart for file types by year.
@@ -254,10 +263,12 @@ class Collection:
         html_counts = [file_type_counts['html'].get(year, 0) for year in years]
         none_counts = [file_type_counts['none'].get(year, 0) for year in years]
 
+        colors = self._get_plot_colors()
+
         fig, ax = plt.subplots()
-        ax.bar(years, pdf_counts, label="PDF", color="blue")
-        ax.bar(years, html_counts, bottom=pdf_counts, label="HTML", color="orange")
-        ax.bar(years, none_counts, bottom=[i + j for i, j in zip(pdf_counts, html_counts)], label="No File", color="gray")
+        ax.bar(years, pdf_counts, label="PDF", color=colors[0])
+        ax.bar(years, html_counts, bottom=pdf_counts, label="HTML", color=colors[1])
+        ax.bar(years, none_counts, bottom=[i + j for i, j in zip(pdf_counts, html_counts)], label="No File", color=colors[2])
 
         ax.set_xlabel(x_axis)
         ax.set_ylabel('Record Count')
@@ -283,7 +294,7 @@ class Collection:
 
         labels = ['PDF', 'HTML', 'No File']
         sizes = [total_pdf, total_html, total_none]
-        colors = ['blue', 'orange', 'gray']
+        colors = self._get_plot_colors()
 
         fig, ax = plt.subplots()
         ax.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=90)
@@ -293,8 +304,97 @@ class Collection:
 
         self.logger.info("Pie chart plotted successfully.")
         return fig, ax
+    
 
-    def plot_annotations():
-        # make a plot of the distribution of annotations based on the records
-        # that could be processed
-        return
+
+    def plot_annotations(self, plot_type: str = "bar", x_axis: Optional[str] = "year") -> plt.Figure:
+        """
+        Plots the distribution of annotations based on the records.
+
+        This function can generate either a bar chart (stacked by year) or a pie chart (summarizing all years).
+        
+        Args:
+            plot_type (str): Type of plot to generate. Either "bar" or "pie". Defaults to "bar".
+            x_axis (Optional[str]): The axis to plot on for the bar chart. Default is "year".
+
+        Returns:
+            plt.Figure, plt.Axis: The figure and axis object containing the plot.
+        """
+        # Get columns that start with 'total_'
+        total_columns = [col for col in self.df.columns if col.startswith("total_")]
+
+        if plot_type == "bar":
+            return self._plot_stacked_bar_chart_annotations(total_columns, x_axis)
+        elif plot_type == "pie":
+            return self._plot_pie_chart_annotations(total_columns)
+        else:
+            self.logger.error(f"Invalid plot type: {plot_type}. Must be 'bar' or 'pie'.")
+            raise ValueError("Invalid plot type. Choose 'bar' or 'pie'.")
+
+    def _plot_stacked_bar_chart_annotations(self, total_columns: List[str], x_axis: str) -> plt.Figure:
+        """
+        Helper method to plot a stacked bar chart for the distribution of annotations by year.
+
+        Args:
+            total_columns (List[str]): List of column names that start with 'total_'.
+            x_axis (str): The axis to plot on (typically 'year').
+
+        Returns:
+            plt.Figure: The figure object containing the stacked bar chart.
+        """
+        years = sorted(set(self.df['Publication Year'].dropna()))
+        
+        # Calculate the sum of all total_categories for each year
+        category_counts = {}
+        for col in total_columns:
+            category_counts[col] = [self.df[col].loc[self.df['Publication Year'] == year].sum() for year in years]
+
+        colors = self._get_plot_colors()
+
+        fig, ax = plt.subplots()
+        bottom_values = [0] * len(years)
+
+        # Plot each category with its respective color and stack them
+        for i, col in enumerate(total_columns):
+            ax.bar(years, category_counts[col], label=col, color=colors[i % len(colors)], bottom=bottom_values)
+            bottom_values = [i + j for i, j in zip(bottom_values, category_counts[col])]
+
+        ax.set_xlabel(x_axis)
+        ax.set_ylabel('Record Count')
+        ax.set_title('Annotation Distribution by Year')
+        ax.legend()
+
+        self.logger.info("Stacked bar chart for annotations plotted successfully.")
+        return fig, ax
+
+
+    def _plot_pie_chart_annotations(self, total_columns: List[str]) -> plt.Figure:
+        """
+        Helper method to plot a pie chart summarizing the total annotations across all years.
+
+        Args:
+            total_columns (List[str]): List of column names that start with 'total_'.
+
+        Returns:
+            plt.Figure: The figure object containing the pie chart.
+        """
+        total_counts = [self.df[col].sum() for col in total_columns]
+        labels = total_columns
+        colors = self._get_plot_colors()
+
+        # Calculate total sum of all categories
+        total_sum = sum(total_counts)
+
+        # Define the format for displaying both sum and percentage
+        def func(pct, allvals=total_counts):
+            absolute = int(round(pct / 100 * total_sum, 2))
+            return f"{absolute} ({pct:.1f}%)"
+
+        fig, ax = plt.subplots()
+        ax.pie(total_counts, labels=labels, colors=colors, autopct=lambda pct: func(pct), startangle=90)
+        ax.axis('equal')  # Equal aspect ratio ensures the pie chart is circular.
+
+        ax.set_title('Distribution of Annotations Across All Records')
+
+        self.logger.info("Pie chart for annotations plotted successfully.")
+        return fig, ax

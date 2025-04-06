@@ -23,3 +23,14 @@ Note:
     (1) create an ipykernel in the .venv - unclear what I did that made this work...
     (2) update the jupyter extension settings to add the path to the new kernel  
     Then it works (mostly)
+
+
+#### 04/05/25  
+Completed first implementation of planned functions.  
+*TODO*  
+* make bar plot more robust in terms of color cycles etc, especially for different categories (only 3 supported)
+* add option to include uncategorized in plots to give an idea of rejection ratios
+* reach out for help with the documentation
+* work on real test case
+* make sure that you can optionally turn down the logging levels
+* ensure that the new category folders are created without spaces in the path
