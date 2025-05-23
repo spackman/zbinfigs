@@ -9,6 +9,7 @@
 ![Read the Docs](https://img.shields.io/readthedocs/zbinfigs)
 
 
+## For the USRSE25 Conference Submission, please see the tutorial notebook [here](https://github.com/spackman/zbinfigs/blob/0af0f7b1a4134e017c98c06c9689b5d5bfbceeef/USRSE25_notebook.ipynb).  
 
 #### Version : 0.1.7  
 
